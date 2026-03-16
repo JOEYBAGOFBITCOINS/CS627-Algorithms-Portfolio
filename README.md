@@ -20,10 +20,15 @@ Repository Structure
 CS627-Algorithms-Portfolio
 │
 ├── Unit1_InPlace_Reversal
+
 ├── Unit2_Ternary_Search
+
 ├── Unit3_Greedy_Disk_Allocation
+
 ├── Unit4_Image_DP
+
 ├── pseudocode
+
 └── README.md
 
 
