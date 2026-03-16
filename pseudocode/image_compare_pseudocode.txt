@@ -1,0 +1,47 @@
+Algorithm ImageCompareDP(X, Y, thresh)
+
+Input:
+X = initial black-and-white image with dimensions I × J
+Y = final black-and-white image with dimensions I × K
+thresh = similarity threshold
+
+Output:
+"Images are similar" or "Images are different"
+
+1. totalDifference ← 0
+
+2. For i ← 1 to I do
+
+3.    Xi ← row i of image X
+4.    Yi ← row i of image Y
+
+5.    Create matrix D of size (J+1) × (K+1)
+
+6.    For j ← 0 to J
+7.        D[j,0] ← j
+
+8.    For k ← 0 to K
+9.        D[0,k] ← k
+
+10.   For j ← 1 to J
+11.       For k ← 1 to K
+
+12.           If Xi[j] = Yi[k]
+13.               cost ← 0
+14.           Else
+15.               cost ← 1
+
+16.           D[j,k] ← min(
+                D[j-1,k-1] + cost,
+                D[j-1,k] + 1,
+                D[j,k-1] + 1
+            )
+
+17.   minVal_i ← minimum value in row D[J,*]
+
+18.   totalDifference ← totalDifference + minVal_i
+
+19. If totalDifference > thresh
+20.     return "Images are different"
+21. Else
+22.     return "Images are similar"
