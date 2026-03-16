@@ -31,4 +31,13 @@ CS627-Algorithms-Portfolio
 
 └── README.md
 
+Running the Dynamic Programming Image Comparison
+
+Compile:
+
+g++ Unit4_Image_DP/image_compare_dp.cpp -o image_compare
+
+Run:
+
+./image_compare
 
