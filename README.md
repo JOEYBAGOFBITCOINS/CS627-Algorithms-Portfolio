@@ -18,7 +18,7 @@ The algorithm uses dynamic programming to compute the minimal mismatch between r
 Repository Structure
 
 CS627-Algorithms-Portfolio
-│
+
 ├── Unit1_InPlace_Reversal
 
 ├── Unit2_Ternary_Search
