@@ -68,9 +68,9 @@ int main()
     cout << "Total Difference: " << totalDifference << endl;
 
     if(totalDifference > thresh)
-        cout << "Images are different" << endl;
-    else
-        cout << "Images are similar" << endl;
+    cout << "Not hot dog" << endl;
+else
+    cout << "Hot dog" << endl;
 
-    return 0;
+return 0;
 }
