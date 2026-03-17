@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int rowDifference(vector<int> X, vector<int> Y)
+int rowDifference(const vector<int>& X, const vector<int>& Y)
 {
     int J = X.size();
     int K = Y.size();
